@@ -4,17 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header id="navbar">
-      <nav>
-        <ul>
+      <nav class="container">
+        <ul class="nav-links">
           <li><a class="nav-link" href="#welcome-section">Welcome</a></li>
           <li><a class="nav-link" href="#projects">Projects</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
           <li>
-            <a id="profile-link" href="https://github.com/" target="_blank"
+            <a
+              id="profile-link"
+              href="https://github.com/m4rcin7"
+              target="_blank"
               >GitHub</a
             >
           </li>
@@ -22,26 +31,54 @@
       </nav>
     </header>
 
-    <section id="welcome-section">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Explore my projects and connect with me.</p>
-    </section>
+    <main>
+      <section id="welcome-section" class="section center">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my projects and connect with me.</p>
+      </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-tile">
-        <h3>Project 1</h3>
-        <p>A brief description of Project 1.</p>
-        <a href="https://yourprojectlink.com" target="_blank">View Project</a>
-      </div>
-    </section>
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project-tile">
+            <h3>Movie App</h3>
+            <p>
+              The application was built with Vite, React, and TypeScript. It
+              uses Firebase and the MovieDB API. For styling, I used Tailwind
+              CSS.
+            </p>
+            <a href="https://movie-app-two-roan.vercel.app/" target="_blank"
+              >View Project</a
+            >
+          </div>
+          <div class="project-tile">
+            <h3>Management panel</h3>
+            s
+            <p>
+              This is a management application. You can add users, view
+              settings, access the panel, and navigate the main page.
+            </p>
+            <a href="https://management-panel-khaki.vercel.app/" target="_blank"
+              >View Project</a
+            >
+          </div>
+          <div class="project-tile">
+            <h3>Stars Rating</h3>
+            <p>Simple Stars Rating Inspiration FrontendMentor</p>
+            <a href="https://m4rcin7.github.io/stars-rating/" target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Feel free to reach out to me at
-        <a href="mailto:youremail@example.com">youremail@example.com</a>.
-      </p>
-    </section>
+      <section id="contact" class="section center">
+        <h2>Contact</h2>
+        <p>
+          Feel free to reach out at
+          <a href="mailto:youremail@example.com">kontakt@limiti.website</a>.
+        </p>
+      </section>
+    </main>
   </body>
 </html>
